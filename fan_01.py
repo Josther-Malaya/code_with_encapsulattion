@@ -1,14 +1,10 @@
-bg_yellow = "\033[43m"
-bg_blue = "\033[44m"
-reset = "\033[0m"
-
 class FanOne:
     bg_yellow = "\033[43m"
     SLOW = 1
     MEDIUM = 2
     FAST = 3
 
-    def __init__(self, fan_speed=1, fan_status=False ,fan_radius=10, fan_color = "yellow"):
+    def __init__(self, fan_speed=3, fan_status=False ,fan_radius=10, fan_color = "yellow"):
         self.__fan_speed = fan_speed
         self.__fan_status = fan_status
         self.__fan_radius = fan_radius
@@ -37,4 +33,3 @@ class FanOne:
 
     def set_fan_color(self, fan_color):
         self.__fan_color = fan_color
-
